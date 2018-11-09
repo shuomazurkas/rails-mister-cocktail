@@ -29,36 +29,17 @@
   <br>
   <br>
 
-  <!-- Cards -->
-  <div class="container">
+<div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-4 card-box">
-<!--        <img class="card" src="../assets/images/BRAMBLE.jpg" alt="BRAMBLE"> -->
-       <%= image_tag "BRAMBLE.jpg", class: "card" %>
+      <% @cocktails.each do |cocktail| %>
+        <div class="col-xs-12 col-sm-4 card-box">
+          <div class="card card-box" style="background-color: white">
+          <h5><%= link_to cocktail.name, cocktail_path(cocktail) %></h5>
+          </div>
+        </div>
+        <% end %>
       </div>
-      <div class="col-xs-12 col-sm-4 card-box">
-        <%= image_tag "el diablo.jpg", class: "card" %>
-      </div>
-      <div class="col-xs-12 col-sm-4 card-box">
-        <%= image_tag "woowoo.jpeg", class: "card" %>
-      </div>
-      <div class="col-xs-12 col-sm-4 card-box">
-       <%= image_tag "bucks_fizz.jpg", class: "card" %>
-      </div>
-      <div class="col-xs-12 col-sm-4 card-box">
-        <%= image_tag "john collins.jpg", class: "card" %>
-      </div>
-      <div class="col-xs-12 col-sm-4 card-box">
-        <%= image_tag "Sazerac.jpg", class: "card" %>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
+</div>ß
 
 
 

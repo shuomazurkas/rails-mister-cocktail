@@ -7,6 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Dose.destroy_all
 
+Cocktail.create(name: "Bramble")
+Cocktail.create(name: "Bucks Fizz")
+
 
 Ingredient.destroy_all
 Ingredient.create(name: "gin")
