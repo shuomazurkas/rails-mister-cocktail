@@ -1,0 +1,27 @@
+<div class="contain">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <%= simple_form_for [@cocktail, @ingredient] do |f| %>
+        <%= f.input :name %>
+        <%= f.input :ingredient, collection: Ingredient::INGREDIENTS %>
+        <%= f.input :picture_url %>
+        <%= f.submit "Add cocktail", class: "btn btn-danger" %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="row">
+      <% @cocktails.each do |cocktail| %>
+      <div class="col-sm-3">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= cocktail.picture_url %>);">
+        <div class="card-description">
+          <h2><%= cocktail.name %></h2>
+          <p><%= cocktail.dose %></p> <!-- <i am not sure what i am doing here-->
+        </div>
+        <%= link_to cocktail_path(cocktail), class: "card-link" ,method: :delete do %>
+        <% end %>
+      </div>
+      </div>
+      <% end %>
+  </div>
+</div>

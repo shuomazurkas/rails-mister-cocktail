@@ -1,0 +1,64 @@
+<div class="navbar-wagon">
+  <!-- Logo -->
+  <a href="/" class="navbar-wagon-brand">
+    <img src="images/logo.png" alt="logo">
+  </a>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+    <a href="" class="navbar-wagon-item navbar-wagon-link">About Us</a>
+    <a href="" class="navbar-wagon-item navbar-wagon-link">Contact</a>
+    <%= link_to "Add Cocktail", new_cocktail_path, class: "navbar-wagon-item navbar-wagon-link" %>
+  </div>
+</div>
+
+
+  <!-- Banner -->
+  <div class="banner" style="background-image:url('<%= image_path "banner1" %>');">
+    <div class="banner-content">
+      <div class="write"> <!-- Do i need this class?-->
+        <h1>Welcome to Mr.Cocktail</h1>
+      </div>
+      <p>A paradise for cocktail lovers</p>
+      <a class="btn btn-primary btn-lg">See Cocktail</a>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!-- Cards -->
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 card-box">
+<!--        <img class="card" src="../assets/images/BRAMBLE.jpg" alt="BRAMBLE"> -->
+       <%= image_tag "BRAMBLE.jpg", class: "card" %>
+      </div>
+      <div class="col-xs-12 col-sm-4 card-box">
+        <%= image_tag "el diablo.jpg", class: "card" %>
+      </div>
+      <div class="col-xs-12 col-sm-4 card-box">
+        <%= image_tag "woowoo.jpeg", class: "card" %>
+      </div>
+      <div class="col-xs-12 col-sm-4 card-box">
+       <%= image_tag "bucks_fizz.jpg", class: "card" %>
+      </div>
+      <div class="col-xs-12 col-sm-4 card-box">
+        <%= image_tag "john collins.jpg", class: "card" %>
+      </div>
+      <div class="col-xs-12 col-sm-4 card-box">
+        <%= image_tag "Sazerac.jpg", class: "card" %>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
